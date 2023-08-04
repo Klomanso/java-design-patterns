@@ -15,13 +15,13 @@ public abstract class Shape {
         }
     }
 
-    public abstract Shape clone();
-
     protected Shape(int x, int y, String color) {
         this.x = x;
         this.y = y;
         this.color = color;
     }
+
+    public abstract Shape clone();
 
     public int getX() {
         return x;

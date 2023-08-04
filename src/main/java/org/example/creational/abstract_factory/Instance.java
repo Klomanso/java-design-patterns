@@ -1,12 +1,16 @@
 package org.example.creational.abstract_factory;
 
-//Represents an abstract product
+// Represents an abstract product
 public interface Instance {
-    void start();
+  void start();
 
-    void attachStorage(Storage storage);
+  void attachStorage(Storage storage);
 
-    void stop();
+  void stop();
 
-    enum Capacity {micro, small, large}
+  enum Capacity {
+    micro,
+    small,
+    large
+  }
 }

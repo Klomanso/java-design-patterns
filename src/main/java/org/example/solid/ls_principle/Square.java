@@ -2,22 +2,22 @@ package org.example.solid.ls_principle;
 
 public class Square implements Shape {
 
-    private int side;
+  private int side;
 
-    public Square(int side) {
-        this.side = side;
-    }
+  public Square(int side) {
+    this.side = side;
+  }
 
-    public int getSide() {
-        return side;
-    }
+  public int getSide() {
+    return side;
+  }
 
-    public void setSide(int side) {
-        this.side = side;
-    }
+  public void setSide(int side) {
+    this.side = side;
+  }
 
-    @Override
-    public int computeArea() {
-        return side * side;
-    }
+  @Override
+  public int computeArea() {
+    return side * side;
+  }
 }

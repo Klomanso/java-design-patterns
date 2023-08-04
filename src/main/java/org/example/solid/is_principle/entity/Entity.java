@@ -1,17 +1,15 @@
 package org.example.solid.is_principle.entity;
 
-//Base class for all entities
+// Base class for all entities
 public abstract class Entity {
 
-    private Long id;
+  private Long id;
 
-    public Long getId() {
-        return id;
-    }
+  public Long getId() {
+    return id;
+  }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-
+  public void setId(Long id) {
+    this.id = id;
+  }
 }

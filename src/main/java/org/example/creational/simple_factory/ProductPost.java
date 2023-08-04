@@ -1,29 +1,25 @@
 package org.example.creational.simple_factory;
 
-/**
- * Represents a product information post.
- */
+/** Represents a product information post. */
 public class ProductPost extends Post {
 
-    private String imageUrl;
+  private String imageUrl;
 
-    private String name;
+  private String name;
 
-    public String getImageUrl() {
-        return imageUrl;
-    }
+  public String getImageUrl() {
+    return imageUrl;
+  }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
+  public void setImageUrl(String imageUrl) {
+    this.imageUrl = imageUrl;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-
+  public void setName(String name) {
+    this.name = name;
+  }
 }

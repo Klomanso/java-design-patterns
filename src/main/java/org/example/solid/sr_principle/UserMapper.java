@@ -5,9 +5,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class UserMapper {
 
-    ObjectMapper mapper = new ObjectMapper();
+  ObjectMapper mapper = new ObjectMapper();
 
-    public User map(String userJson) throws JsonProcessingException {
-        return mapper.readValue(userJson, User.class);
-    }
+  public User map(String userJson) throws JsonProcessingException {
+    return mapper.readValue(userJson, User.class);
+  }
 }

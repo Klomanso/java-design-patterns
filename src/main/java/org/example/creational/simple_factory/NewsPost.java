@@ -2,30 +2,26 @@ package org.example.creational.simple_factory;
 
 import java.time.LocalDate;
 
-/**
- * Represents a news post.
- */
+/** Represents a news post. */
 public class NewsPost extends Post {
 
-    private String headline;
+  private String headline;
 
-    private LocalDate newsTime;
+  private LocalDate newsTime;
 
-    public String getHeadline() {
-        return headline;
-    }
+  public String getHeadline() {
+    return headline;
+  }
 
-    public void setHeadline(String headline) {
-        this.headline = headline;
-    }
+  public void setHeadline(String headline) {
+    this.headline = headline;
+  }
 
-    public LocalDate getNewsTime() {
-        return newsTime;
-    }
+  public LocalDate getNewsTime() {
+    return newsTime;
+  }
 
-    public void setNewsTime(LocalDate newsTime) {
-        this.newsTime = newsTime;
-    }
-
-
+  public void setNewsTime(LocalDate newsTime) {
+    this.newsTime = newsTime;
+  }
 }

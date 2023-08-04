@@ -4,24 +4,23 @@ import java.time.LocalDateTime;
 
 public class User extends Entity {
 
-    private String name;
+  private String name;
 
-    private LocalDateTime lastLogin;
+  private LocalDateTime lastLogin;
 
-    public String getName() {
-        return name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public LocalDateTime getLastLogin() {
-        return lastLogin;
-    }
+  public LocalDateTime getLastLogin() {
+    return lastLogin;
+  }
 
-    public void setLastLogin(LocalDateTime lastLogin) {
-        this.lastLogin = lastLogin;
-    }
-
+  public void setLastLogin(LocalDateTime lastLogin) {
+    this.lastLogin = lastLogin;
+  }
 }

@@ -6,14 +6,14 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
 
 public class JSONFormatter implements Formatter {
 
-    public String format(Message message) throws FormatException {
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.registerModule(new SimpleModule());
-        try {
-            return mapper.writeValueAsString(message);
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-            throw new FormatException(e);
-        }
+  public String format(Message message) throws FormatException {
+    ObjectMapper mapper = new ObjectMapper();
+    mapper.registerModule(new SimpleModule());
+    try {
+      return mapper.writeValueAsString(message);
+    } catch (JsonProcessingException e) {
+      e.printStackTrace();
+      throw new FormatException(e);
     }
+  }
 }

@@ -12,6 +12,12 @@ public class Rectangle extends Shape {
         }
     }
 
+    public Rectangle(int x, int y, String color, int width, int height) {
+        super(x, y, color);
+        this.width = width;
+        this.height = height;
+    }
+
     @Override
     public Shape clone() {
         return new Rectangle(this);
@@ -23,12 +29,6 @@ public class Rectangle extends Shape {
 
     public void setWidth(int width) {
         this.width = width;
-    }
-
-    public Rectangle(int x, int y, String color, int width, int height) {
-        super(x, y, color);
-        this.width = width;
-        this.height = height;
     }
 
     public int getHeight() {
