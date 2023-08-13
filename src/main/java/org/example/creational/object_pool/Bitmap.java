@@ -3,9 +3,8 @@ package org.example.creational.object_pool;
 // concrete reusable
 public class Bitmap implements Image {
 
-  private Point2D location;
-
   private final String name;
+  private Point2D location;
 
   public Bitmap(String name) {
     this.name = name;

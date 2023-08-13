@@ -6,11 +6,11 @@ public final class LazySingletonODH {
     System.out.println("shsd");
   }
 
-  private static class RegistryHolder {
-    static LazySingletonODH INSTANCE = new LazySingletonODH();
-  }
-
   public static LazySingletonODH getInstance() {
     return RegistryHolder.INSTANCE;
+  }
+
+  private static class RegistryHolder {
+    static LazySingletonODH INSTANCE = new LazySingletonODH();
   }
 }

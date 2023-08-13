@@ -8,9 +8,9 @@ package org.example.creational.singleton;
  */
 public final class LazySingletonDCL {
 
-  private LazySingletonDCL() {}
-
   private static volatile LazySingletonDCL INSTANCE;
+
+  private LazySingletonDCL() {}
 
   public static LazySingletonDCL getInstance() {
     if (INSTANCE == null) {
